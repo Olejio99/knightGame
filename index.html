@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css" />
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+    <div class="screen screen-start show">
+      <div class="panel">
+        <h1>The Battle of Heroes</h1>
+        <ul>
+          <li>Enter your name and press the start button</li>
+          <li>Go ahead by overcoming the obstacles</li>
+          <li>Destroy the monsters in your path</li>
+          <li>Use the skills to fight monsters</li>
+          <li>Each skill uses MP, but MP regenerates by 5MP/sec</li>
+        </ul>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter your name, Hero!"
+            id="playerName"
+          />
+          <input type="submit" value="Next!" id="startBtn" />
+        </form>
+      </div>
+    </div>
+    <div class="screen screen-game">
+      <div class="game-panel game-panel-user">
+        <div class="user-info">Username</div>
+        <div class="panel-hp">
+          <div class="score-value"><span>100</span></div>
+        </div>
+        <div class="panel-mp">
+          <div class="score-value"><span>100</span></div>
+        </div>
+        <div class="panel-sp">
+          <div class="score-value"><span>100</span></div>
+        </div>
+      </div>
+
+      <div class="game-panel game-panel-skills">
+        <div id="skills">
+          <div class="one"><span>3</span></div>
+          <div class="two"><span>1</span></div>
+          <div class="three"></div>
+        </div>
+      </div>
+
+      <div class="game-panel game-panel-scores">
+        <div class="timer">Time: mm:ss</div>
+        <div class="kills">Killed: killed</div>
+      </div>
+    </div>
+    <!--
+      <script>
+          $("#startBtn").click(function(){
+              console.log(123);
+              $("#screen-start").hide();
+          });
+      </script>
+    -->
+
+    <script src="img/player/KnightFinal.js"></script>
+    <script src="img/player/scorpion.js"></script>
+    <script src="img/player/skeleton.js"></script>
+    <script src="skills.js"></script>
+    <script src="node.js"></script>
+    <script src="warior.js"></script>
+    <script src="noFriend.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
